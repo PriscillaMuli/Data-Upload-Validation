@@ -13,4 +13,4 @@ The specific code used for fetching data from the API endpoints was:
  
 The “-k” option in this command permits insecure SSL connections, while the provided API endpoint “datasets/bxd’ fetches information about the specific BXD dataset. 
 
-The information retrieved by accessing the specified API endpoint included fields such as create time, ProbeFreeze ID, publicity, confidentiality, full name, short name, long abbreviation, short abbreviation and data scale, confirming the data has been successfully uploaded.
+The information retrieved by accessing the specified API endpoint included fields such as create time, ProbeFreeze Id, Id, public, confidentiality, full name, short name, long abbreviation, short abbreviation and data scale, confirming the data has been successfully uploaded.
