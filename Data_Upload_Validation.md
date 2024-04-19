@@ -15,10 +15,10 @@ Another error surfaced during the dataset upload process:
 To address this, I verified that both the average and standard error files were properly linked to the same platform, study, and dataset otherwise the system would reject the data as invalid.
 
 # Data Format and Modifications
-The original format of the data was in an Excel file which contained 6 columns, namely "value," "SE," "status," "RRID," "epoch," and "SeqCvge.".
+The original format of the data was in an Excel file which contained 8 columns, namely "index", "name", "value," "SE," "status," "RRID," "epoch," and "SeqCvge.".
 
 # Modifications
-•	To clean up the data, I used Python to remove the metadata fields: "status," "RRID," "epoch," and "SeqCvge." in order to remain with only the relevant fields “value” and “SE”.
+•	To clean up the data, I used Python to remove the metadata fields: :"index", "status," "RRID," "epoch," and "SeqCvge." in order to remain with only the relevant fields "name", “value” and “SE”.
 
 •	I ensured the first row in the matrix contains the headings to so that the dataset complies with the system requirements. 
 
@@ -28,7 +28,7 @@ The original format of the data was in an Excel file which contained 6 columns, 
 
 
 # Examples of Invalid Data
-In the standard error files, examples of invalid data included figures that did not possess six decimal places as well as standard error files that were not properly linked to the same platform, study, and dataset as the averages values. For  the averages file, figures lacking three decimal places were considered invalid.Data that was not in the correct, acceptable formats which are tsv,csv, or txt or contained metadata fields are also considered invalid.
+In the standard error files, examples of invalid data included figures that did not possess six decimal places as well as standard error files that were not properly linked to the same platform, study, and dataset as the averages values. For  the averages file, figures lacking three decimal places were considered invalid. Data that was not in the correct, acceptable formats which are tsv,csv, or txt or contained metadata fields are also considered invalid.
 
 # Examples of Valid Data 
 Valid data in the standard error file would consist of values with precisely six decimal places, ensuring compliance with system standards. Valid data in the average file would consist of values with precisely three decimal places.
