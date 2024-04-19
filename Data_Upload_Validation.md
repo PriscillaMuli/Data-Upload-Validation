@@ -1,5 +1,3 @@
-# **Description**
-
 # Data Upload Process
 
 The process of uploading data to the GeneNetwork platform began with retrieving the dataset from the Gene Network page (https://genenetwork.org/show_trait?trait_id=24668&dataset=BXDPublish), which comprised a phenotype matrix of the BXD mouse group identified by the phenotype ID: BXD_24668. This research paper associated with this dataset is titled "Novel pre-clinical model to identify genetic modifiers of triple negative breast cancer," accessible at https://aacrjournals.org/cancerres/article/81/13_Supplement/2919/668784/Abstract-2919-Novel-pre-clinical-model-to-identify. 
@@ -30,10 +28,10 @@ The original format of the data was in an Excel file which contained 6 columns, 
 
 
 # Examples of Invalid Data
-In the standard error file, examples of invalid data included figures that did not possess six decimal places. For  the averages file, figures lacking three decimal places were considered invalid. Data that was not in the correct, acceptable formats which are tsv,csv, or txt or contained metadata fields was also considered invalid.
+In the standard error files, examples of invalid data included figures that did not possess six decimal places as well as standard error files that were not properly linked to the same platform, study, and dataset as the averages values. For  the averages file, figures lacking three decimal places were considered invalid.Data that was not in the correct, acceptable formats which are tsv,csv, or txt or contained metadata fields are also considered invalid.
 
 # Examples of Valid Data 
-Valid data in the standard error file would consist of values with precisely three decimal places, ensuring compliance with system standards. 
+Valid data in the standard error file would consist of values with precisely six decimal places, ensuring compliance with system standards. Valid data in the average file would consist of values with precisely three decimal places.
 
 # Data Validation Process
 For the data uploaded, it is necessary to validate that the data is present on the server.  
